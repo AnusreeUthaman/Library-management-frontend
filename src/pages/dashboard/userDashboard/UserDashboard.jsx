@@ -38,7 +38,7 @@ const UserDashboard = () => {
       <Navbar />
       <div className="flex">
         <UserSidebar />
-        <div className="ml-20 md:ml-64 p-4 flex-1 mt-15">
+        <div>
           <SearchBar search={search} setSearch={setSearch} onSearch={fetchBooks} />
           <FilterBar filters={filters} setFilters={setFilters} onApply={fetchBooks} />
           <Outlet />
