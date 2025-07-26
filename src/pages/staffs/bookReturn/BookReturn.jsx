@@ -100,7 +100,7 @@ const ReturnBook = () => {
       key: "penalty_paid",
       render: (row) =>
         row.penalty_paid !== "None" ? (
-          <span className="bg-red-100 text-red-700 px-2 py-1 text-xs rounded-full font-medium">
+          <span className=" text-red-700 px-2 py-1 text-xs rounded-full  font-bold">
             {row.penalty_paid}
           </span>
         ) : (
