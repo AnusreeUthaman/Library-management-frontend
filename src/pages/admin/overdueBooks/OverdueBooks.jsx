@@ -28,7 +28,7 @@ const OverdueBooks = () => {
       title: "Days Overdue",
       key: "days_overdue",
       render: (row) => {
-        const due = new Date(row.due_date).toLocaleDateString("en-IN");
+        const due = new Date(row.due_date)
         const now = new Date();
         // 1sec*1min*1hr*1day (round whole num)
         const diff = Math.ceil((now - due) / (1000 * 60 * 60 * 24)); 
